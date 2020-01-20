@@ -2,9 +2,11 @@ package com.marcellus.petclinic.services.map;
 
 import com.marcellus.petclinic.model.Owner;
 import com.marcellus.petclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     public Owner findByLastName(String lastName){

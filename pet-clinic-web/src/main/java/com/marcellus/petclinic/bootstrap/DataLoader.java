@@ -4,8 +4,7 @@ import com.marcellus.petclinic.model.Owner;
 import com.marcellus.petclinic.model.Vet;
 import com.marcellus.petclinic.services.OwnerService;
 import com.marcellus.petclinic.services.VetService;
-import com.marcellus.petclinic.services.map.OwnerServiceMap;
-import com.marcellus.petclinic.services.map.VetServiceMap;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -15,13 +14,12 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-
-    public DataLoader(){
-        this.ownerService = new OwnerServiceMap();
-        this.vetService = new VetServiceMap();
-
-
+    @Autowired
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
+
     @Override
     public void run(String... args) throws Exception {
         Owner owner1 = new Owner();
