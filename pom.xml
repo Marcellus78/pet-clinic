@@ -14,7 +14,7 @@
     </parent>
     <groupId>com.marcellus</groupId>
     <artifactId>pet-clinic</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.3</version>
     <name>pet-clinic</name>
     <description>Pet Clinic Application Spring Tutorial</description>
 
@@ -40,7 +40,7 @@
     </build>
     <scm>
         <developerConnection>scm:git:https://github.com/Marcellus78/pet-clinic.git</developerConnection>
-      <tag>HEAD</tag>
-  </scm>
+        <tag>pet-clinic-0.0.3</tag>
+    </scm>
 
 </project>
