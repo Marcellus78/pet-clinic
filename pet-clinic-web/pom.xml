@@ -20,8 +20,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.marcellus</groupId>
             <artifactId>pet-clinic-data</artifactId>
+            <groupId>com.marcellus</groupId>
             <version>0.0.4-SNAPSHOT</version>
         </dependency>
         <dependency>
