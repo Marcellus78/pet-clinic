@@ -1,0 +1,5 @@
+com/marcellus/petclinic/bootstrap/DataLoader.class
+com/marcellus/petclinic/controllers/IndexController.class
+com/marcellus/petclinic/PetClinicApplication.class
+com/marcellus/petclinic/controllers/VetController.class
+com/marcellus/petclinic/controllers/OwnerController.class
